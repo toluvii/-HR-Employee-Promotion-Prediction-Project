@@ -1,9 +1,11 @@
 HR Employee Promotion Prediction Project
-Project Overview
+- Project Overview
 This project explores the key factors influencing employee promotions within a large organization. By analyzing various attributes such as department, region, education, age, and previous performance ratings, we aim to predict whether an employee will be promoted. Through machine learning techniques, we strive to uncover patterns that can optimize promotion processes and create more data-driven HR strategies.
-Objective
+
+- Objective
 The main objective of this project is to develop a predictive model that accurately classifies whether an employee will be promoted based on historical data. This can aid HR teams in understanding promotion trends and improving their decision-making processes.
-Dataset Overview
+
+- Dataset Overview
 The dataset consists of 13 columns and 54,808 rows, with one dependent variable (whether the employee was promoted) and 12 independent variables that include:
 •	Employee Information: ID, Department, Region, Gender
 •	HR Metrics: No. of Trainings, Length of Service, Awards Won, Previous Year Rating
@@ -16,14 +18,17 @@ Key Features:
 4.	No. of Trainings: How many trainings the employee has attended.
 5.	Awards Won: Whether the employee has won any awards.
 6.	Department & Region: Organizational and geographical factors impacting promotion.
-Data Preprocessing
+
+- Data Preprocessing
 Before modeling, we handled missing values and outliers in the dataset:
 •	Missing values in Education, Previous Year Rating, and Average Training Score were imputed using mode, median, and mean respectively.
 •	Outliers in numerical features (e.g., Age, Length of Service) were replaced using interquartile ranges (IQR) to maintain data integrity.
-Feature Engineering:
+
+- Feature Engineering:
 •	Log Transformation: Applied to skewed features (e.g., Age, Length of Service, and Training Scores) to normalize their distribution.
 •	One-Hot Encoding: Applied to categorical features like department and region to make them suitable for machine learning models.
-Modeling and Evaluation
+
+- Modeling and Evaluation
 Several machine learning models were developed and evaluated:
 1.	Logistic Regression:
 o	Accuracy: 93.60%
@@ -49,5 +54,6 @@ Key Insights and Findings
 •	Training and Promotion: Higher training scores significantly correlated with a higher likelihood of promotion. However, attending more trainings beyond 2 did not necessarily increase promotion chances.
 •	Regional and Gender Disparities: Certain regions showed significantly higher promotion rates, and female employees had a slightly higher promotion rate compared to male employees.
 •	Education Levels: Employees with Master’s & above had the highest promotion rates, followed by those with Below Secondary education.
-Conclusion
+
+- Conclusion
 This project provides a powerful framework for predicting employee promotions based on historical data. By implementing machine learning models and careful data analysis, we can identify key factors that influence promotion outcomes, offering actionable insights to HR teams.
